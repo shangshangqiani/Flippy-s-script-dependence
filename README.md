@@ -46,27 +46,27 @@ y
 ## 【U盘启动升级OpenWRT】:
 
 1.确认分区情况
-<br/><br/>lsblk  
-<br/><br/>看看`sda`下有没有`sda3`和`sda4`没有则执行以下命令:  
-<br/><br/>cfdisk  
-<br/><br/>slect--->new--->partition size:960M(primary)`创建sda3`  
-<br/><br/>--->writ--->yes--->quit  
-<br/><br/>slect--->new--->partition size:960M(primary)`创建sda4`  
-<br/><br/>--->writ--->yes--->quit  
+&nbsp;&nbsp;lsblk  
+&nbsp;&nbsp;看看`sda`下有没有`sda3`和`sda4`没有则执行以下命令:  
+&nbsp;&nbsp;cfdisk  
+&nbsp;&nbsp;slect--->new--->partition size:960M(primary)`创建sda3`  
+&nbsp;&nbsp;--->writ--->yes--->quit  
+&nbsp;&nbsp;slect--->new--->partition size:960M(primary)`创建sda4`  
+&nbsp;&nbsp;--->writ--->yes--->quit  
              
  2.确认挂载情况
-<br/><br/>lsblk  
-<br/><br/>如果`sda`下`sda2`挂载到`/`以及`sad4`未挂载则执行以下命令:  
-<br/><br/>mkfs.ext4 /dev/sda4  
-<br/><br/>mkdir /mnt/sda4  
-<br/><br/>mount /dev/sda4 /mnt/sda4  
-<br/><br/>如果`sda`下`sda3`挂载到`/`则执行以下命令  
-<br/><br/>mount /dev/sda2 /mnt/sda3  
+&nbsp;&nbsp;lsblk  
+&nbsp;&nbsp;如果`sda`下`sda2`挂载到`/`以及`sad4`未挂载则执行以下命令:  
+&nbsp;&nbsp;mkfs.ext4 /dev/sda4  
+&nbsp;&nbsp;mkdir /mnt/sda4  
+&nbsp;&nbsp;mount /dev/sda4 /mnt/sda4  
+&nbsp;&nbsp;如果`sda`下`sda3`挂载到`/`则执行以下命令  
+&nbsp;&nbsp;mount /dev/sda2 /mnt/sda3  
       
 3.将固件上传至`/mnt/sda4`  
-<br/><br/>cd /usr/sbin  
-<br/><br/>sh openwrt-update-amlogic  
-<br/><br/>y  
+&nbsp;&nbsp;cd /usr/sbin  
+<&nbsp;&nbsp;sh openwrt-update-amlogic  
+&nbsp;&nbsp;y  
    
 ## enjoy~
  
