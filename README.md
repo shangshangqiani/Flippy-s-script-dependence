@@ -56,7 +56,7 @@ y
              
  2.确认挂载情况
 &nbsp;&nbsp;lsblk  
-&nbsp;&nbsp;如果`sda`下`sda2`挂载到`/`以及`sad4`未挂载则执行以下命令:  
+&nbsp;&nbsp;如果`sda`下`sda2`挂载到`/`且`sad4`未挂载则执行以下命令:  
 &nbsp;&nbsp;mkfs.ext4 /dev/sda4  
 &nbsp;&nbsp;mkdir /mnt/sda4  
 &nbsp;&nbsp;mount /dev/sda4 /mnt/sda4  
