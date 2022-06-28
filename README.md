@@ -7,8 +7,8 @@ Amlogic S9xxx内核与脚本打包工具：https://github.com/a736399919/openwrt
 ## 【脚本依赖】：
 
 Base system--->busybox  
-                      [*]Customize busybox options  
-                          Linux System Utilities--->  
+&emsp                      [*]Customize busybox options  
+&emsp                          Linux System Utilities--->  
                           [*]fdisk  
                           [*]  Write support  
                           [*]    Support AIT disklabels  
