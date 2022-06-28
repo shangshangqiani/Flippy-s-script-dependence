@@ -64,7 +64,7 @@ y
    sh openwrt-update-amlogic
    y
    
-## enjoy
+## enjoy~
  
 ## 鸣谢
 
