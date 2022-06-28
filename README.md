@@ -65,7 +65,7 @@ y
       
 3.将固件上传至`/mnt/sda4`  
 &nbsp;&nbsp;cd /usr/sbin  
-<&nbsp;&nbsp;sh openwrt-update-amlogic  
+&nbsp;&nbsp;sh openwrt-update-amlogic  
 &nbsp;&nbsp;y  
    
 ## enjoy~
