@@ -6,9 +6,10 @@ Amlogic S9xxx内核与脚本打包工具：https://github.com/a736399919/openwrt
 
 ## 【脚本依赖】：
 
+```yaml
 Base system--->busybox  
-&emsp                      [*]Customize busybox options  
-&emsp                          Linux System Utilities--->  
+                      [*]Customize busybox options  
+                          Linux System Utilities--->  
                           [*]fdisk  
                           [*]  Write support  
                           [*]    Support AIT disklabels  
@@ -27,6 +28,7 @@ Utilities--->Disc--->
                   <*>losetup  
                   <*>uuidgen  
 Languages--->Perl---><*>perl  
+```
 
 ## 【安装OpenWRT进emmc】：
 
