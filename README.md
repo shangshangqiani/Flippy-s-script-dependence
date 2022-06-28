@@ -4,7 +4,8 @@
 openwrt源码仓库lean:https://github.com/coolsnowwolf/lede
 Amlogic S9xxx内核与脚本打包工具：https://github.com/a736399919/openwrt-s905d-n1
 
-【脚本依赖】：
+## 【脚本依赖】：
+
 Base system--->busybox
                       [*]Customize busybox options
                           Linux System Utilities--->
@@ -27,18 +28,21 @@ Utilities--->Disc--->
                   <*>uuidgen
 Languages--->Perl---><*>perl
 
-【安装OpenWRT进emmc】：
+## 【安装OpenWRT进emmc】：
+
 cd /usr/sbin
 sh openwrt-install-amlogic
 Please choose:101（Phicomm N1为例）
 
-【Emmc启动升级OpenWRT】:
+## 【Emmc启动升级OpenWRT】:
+
 将固件上传至 /mnt/mmcblk2p4
 cd /usr/sbin
 sh openwrt-update-amlogic
 y
 
-【U盘启动升级OpenWRT】:
+## 【U盘启动升级OpenWRT】:
+
 1、lsblk
    看看sda下有没有sda3和sda4没有则执行以下命令:
    cfdisk
@@ -60,5 +64,12 @@ y
    sh openwrt-update-amlogic
    y
    
- enjoy~ 
+## enjoy
  
+## 鸣谢
+
+- [OpenWrt](https://github.com/openwrt/openwrt)
+- [coolsnowwolf/lede](https://github.com/coolsnowwolf/lede)
+- [Lienol/openwrt](https://github.com/Lienol/openwrt)
+- [unifreq/openwrt_packit](https://github.com/unifreq/openwrt_packit)
+- [openwrt-s905d-n1](https://github.com/a736399919/openwrt-s905d-n1)
