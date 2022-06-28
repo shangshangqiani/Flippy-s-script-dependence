@@ -1,7 +1,7 @@
 # Flippy-s-script-dependence
 本仓库主要介绍Flippy's Amlogic S9xxx script依赖及用法
 
-openwrt源码仓库lean: https://github.com/coolsnowwolf/lede  
+openwrt源码仓库lean：https://github.com/coolsnowwolf/lede  
 Amlogic S9xxx内核与脚本打包工具：https://github.com/a736399919/openwrt-s905d-n1  
 
 ## 【脚本依赖】：
