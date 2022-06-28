@@ -45,15 +45,15 @@ y
 
 ## 【U盘启动升级OpenWRT】:
 
-1、lsblk  
-   看看sda下有没有sda3和sda4没有则执行以下命令:  
-   cfdisk  
-      slect--->new--->partition size:960M(primary)`创建sda3` 
-             --->writ--->yes  
-      slect--->new--->partition size:960M(primary)`创建sda4` 
-             --->writ--->yes  
+1.确认分区情况
+     lsblk  
+  看看`sda`下有没有`sda3`和`sda4`没有则执行以下命令:  
+     cfdisk  
+  slect--->new--->partition size:960M(primary)`创建sda3`--->writ--->yes--->quit  
+  slect--->new--->partition size:960M(primary)`创建sda4`--->writ--->yes--->quit  
              
- 2、lsblk  
+ 2.确认挂载情况
+      lsblk  
    如果`sda`下`sda2`挂载到`/`以及`sad4`未挂载则执行以下命令:  
       mkfs.ext4 /dev/sda4  
       mkdir /mnt/sda4  
@@ -61,10 +61,10 @@ y
    如果`sda`下`sda3`挂载到`/`则执行以下命令  
       mount /dev/sda2 /mnt/sda3  
       
-3、将固件上传至`/mnt/sda4`  
-   cd /usr/sbin  
-   sh openwrt-update-amlogic  
-   y  
+3.将固件上传至`/mnt/sda4`  
+     cd /usr/sbin  
+     sh openwrt-update-amlogic  
+     y  
    
 ## enjoy~
  
