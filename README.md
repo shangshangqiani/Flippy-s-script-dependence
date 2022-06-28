@@ -10,17 +10,10 @@ Amlogic S9xxx内核与脚本打包工具：https://github.com/a736399919/openwrt
 Base system--->busybox  
                       [*]Customize busybox options  
                           Linux System Utilities--->  
-                          [*]fdisk  
-                          [*]  Write support  
-                          [*]    Support AIT disklabels  
-                          [*]    Support SGI disklabels  
-                          [*]    Support SUN disklabels  
-                          [*]    Support BSD disklabels  
-                          [*]    Support GPT disklabels  
-                          [*]    Support expert mode  
                           [*]mkfs.ext2  
 Utilities--->Disc--->  
-                        <*>cfdisk  
+                        <*>cfdisk 
+                        <*>fdisk 
                         <*>lsblk  
                   Filesystem--->  
                         <*>btrfs-progs  
